@@ -1,10 +1,10 @@
 // import mongoose.
-const mongoose = require('mongoose');
+import mongoose from "mongoose"
 //schema.
 const subscribeSchema = new mongoose.Schema({
 
     email:{
-        type:String,
+        type:module,
         required:[true,"user email is required"],
         unique:true,
         
@@ -12,4 +12,4 @@ const subscribeSchema = new mongoose.Schema({
    
 })
 //export
-module.exports=mongoose.model('subscribe',subscribeSchema)
+export default subscribeSchema;

@@ -1,11 +1,13 @@
 // import mongoose.
-const express = require('express');
+// const express = require('express');
+import express from 'express';
 
-const { subscribeControllers, sendmail } = require('../controllers/subscribe-controllers');
+import { subscribeControllers, sendmail } from'../controllers/Subscribeproj.js';
 
 const router = express.Router();
 // routes.
 router.get('/subcribe',sendmail)
 
  //export router.
- module.exports = router
+//  module.exports = router
+export default router;

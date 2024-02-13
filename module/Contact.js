@@ -1,5 +1,5 @@
 // import mongoose.
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
 // route handler.
 const ContactSchema = new mongoose.Schema({
@@ -13,17 +13,17 @@ const ContactSchema = new mongoose.Schema({
     //  maxLength:50,
  },
    phoneno:{
-       type:String,
+       type:module,
        require:true,
    },
    Service:{
-     type:String,
+     type:module,
      require:true,
    },
    Yourmessage:{
-    type:String,
+    type:module,
     require:true,
   },
  })
  //
- module.exports = mongoose.model("conta",ContactSchema);
+ export default ContactSchema;

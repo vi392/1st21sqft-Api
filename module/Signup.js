@@ -1,8 +1,9 @@
 // import mongoose.
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
 // route handler.
 const SignupSchema = new mongoose.Schema({
+
     username:{
         type:String,
         require:true, 
@@ -19,4 +20,4 @@ const SignupSchema = new mongoose.Schema({
 })
 
 //
-module.exports = mongoose.model("signu",SignupSchema);
+export default SignupSchema;

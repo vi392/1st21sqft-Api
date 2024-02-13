@@ -1,8 +1,9 @@
 //import the module.
-const conta = require("../module/Contact");
+// const conta = require("../module/Contact");
+import conta from "../module/Contact.js";
 
 // define route handler.
-exports.Contactproj = async(req,res) => {
+const Contactproj = async(req,res) => {
     try{
      // extract title and descripation from request body
      const{name,email,phoneno,Service,Yourmessage} = req.body;
@@ -31,3 +32,4 @@ res.status(200).json(
     }
 }
 
+export default Contactproj;

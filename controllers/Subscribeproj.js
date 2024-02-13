@@ -1,6 +1,8 @@
 
 // import nodemailer.
-const nodemailer = require("nodemailer");
+// const nodemailer = require("nodemailer");
+import nodemailer from "nodemailer";
+
 
 //bussiness Logic.
 const sendmail= async(req,res)=>{
@@ -34,4 +36,5 @@ const sendmail= async(req,res)=>{
   
 }
 // export controllers
-module.exports ={sendmail}
+// module.exports ={sendmail}
+export default sendmail;
